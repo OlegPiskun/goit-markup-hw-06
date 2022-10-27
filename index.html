@@ -523,11 +523,40 @@
       <div class="modal">
         <button data-modal-close class="button-modal" type="button">
           <svg class="button-modal-icon">
-            <use
-              href="./images/symbol-defs-bt-modal.svg#icon-close-black-18dp-2-1-2"
-            ></use>
+            <use href="./images/symbol-defs.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <div class="modal-box">
+          <b class="modal-text">Залиште свої дані, ми вам передзвонимо</b>
+          <form class="modal-box-form">
+            <label
+              >Ім'я
+              <input type="text" name="name" />
+            </label>
+
+            <label
+              >Телефон
+              <input type="text" name="telephone" />
+            </label>
+
+            <label
+              >Пошта
+              <input type="text" name="email" />
+            </label>
+
+            <label
+              >Коментар
+              <textarea name="comment" rows=" "></textarea>
+            </label>
+
+            <input type="checkbox" name="contract" id="contract" />
+            <label for="contract">
+              Погоджуюся з розсилкою та приймаю Умови договору</label
+            >
+
+            <button class="modal-button-send" type="button">Відправити</button>
+          </form>
+        </div>
       </div>
     </div>
 
