@@ -792,24 +792,91 @@ body {
   fill: var(--accent-color);
 }
 
-.modal-form {
+.modal-box {
   /* display: flex; */
   padding-top: 40px;
   /* padding-bottom: 40px; */
 }
 
 .modal-text {
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+
   letter-spacing: 0.03em;
 }
 
 .modal-box-form {
+  width: 448px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
   display: flex;
   flex-direction: column;
+  position: relative;
+  /* margin-bottom: 28px; */
+  /* border: 1px solid rgba(33, 33, 33, 0.2); */
+  /* border-radius: 4px; */
+}
+
+.form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  display: inline-block;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+}
+
+.form-field-input:focus + .form-field-icon,
+.form-field-input:hover + .form-field-icon {
+  fill: var(--accent-color);
+}
+
+/* .label {
+  display: block;
+} */
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+.form-field input,
+.form-field textarea {
+  margin-bottom: 10px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-field input:hover,
+.form-field input:focus,
+.form-field textarea:hover,
+.form-field textarea:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.form-field textarea {
+  margin-bottom: 20px;
+}
+
+.form-field textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-button-send {

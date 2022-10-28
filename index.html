@@ -529,32 +529,46 @@
         <div class="modal-box">
           <b class="modal-text">Залиште свої дані, ми вам передзвонимо</b>
           <form class="modal-box-form">
-            <label
-              >Ім'я
-              <input type="text" name="name" />
+            <div class="form-field">
+              <label for="name" class="form-field-label">Ім'я</label>
+              <input
+                type="text"
+                class="form-field-input"
+                name="name"
+                id="name"
+              />
+              <svg class="form-field-icon">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label for="telephone" class="label">Телефон</label>
+              <input type="text" name="telephone" id="telephone" />
+            </div>
+
+            <div class="form-field">
+              <label for="email" class="label">Пошта</label>
+              <input type="text" name="email" id="email" />
+            </div>
+
+            <div class="form-field">
+              <label for="comment" class="label">Коментар</label>
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Введіть текст"
+                id="comment"
+              ></textarea>
+            </div>
+
+            <label class="label">
+              <input type="checkbox" name="contract" />
+              Погоджуюся з розсилкою та приймаю
+              <span class="color-terms">Умови договору</span>
             </label>
 
-            <label
-              >Телефон
-              <input type="text" name="telephone" />
-            </label>
-
-            <label
-              >Пошта
-              <input type="text" name="email" />
-            </label>
-
-            <label
-              >Коментар
-              <textarea name="comment" rows=" "></textarea>
-            </label>
-
-            <input type="checkbox" name="contract" id="contract" />
-            <label for="contract">
-              Погоджуюся з розсилкою та приймаю Умови договору</label
-            >
-
-            <button class="modal-button-send" type="button">Відправити</button>
+            <button class="modal-button-send" type="submit">Відправити</button>
           </form>
         </div>
       </div>
