@@ -821,19 +821,24 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* margin-bottom: 28px; */
-  /* border: 1px solid rgba(33, 33, 33, 0.2); */
-  /* border-radius: 4px; */
+}
+
+.form-field-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .form-field-icon {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 12px;
-  display: inline-block;
+  /* display: flex;
+  align-items: baseline; */
   transform: translateY(-50%);
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   width: 18px;
   height: 18px;
 }
@@ -843,8 +848,9 @@ body {
   fill: var(--accent-color);
 }
 
-/* .label {
-  display: block;
+/* .form-field input:focus,
+.form-field input:hover {
+  border: 1px solid var(--accent-color);
 } */
 
 .form-field label {
@@ -854,11 +860,15 @@ body {
 .form-field input,
 .form-field textarea {
   margin-bottom: 10px;
-  height: 40px;
+  padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
 }
+
+/* .form-field:focus-within > .form-field-input {
+  border: 1px solid var(--accent-color);
+} */
 
 .form-field input:hover,
 .form-field input:focus,
@@ -868,7 +878,9 @@ body {
 }
 
 .form-field textarea {
+  height: 120px;
   margin-bottom: 20px;
+  padding: 12px 16px;
 }
 
 .form-field textarea::placeholder {
@@ -877,6 +889,55 @@ body {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border-radius: 2px;
+  background-color: var(--primary-white-color);
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  fill: var(--accent-color);
+}
+
+.checkbox:focus + .checkbox-icon {
+  fill: #212121;
+}
+
+.checkbox:checked:focus + .checkbox-icon {
+  fill: #212121;
+}
+
+.color-terms {
+  color: var(--accent-color);
+  text-decoration: underline var(--accent-color);
+  text-decoration-style: solid;
 }
 
 .modal-button-send {

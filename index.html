@@ -543,29 +543,49 @@
             </div>
 
             <div class="form-field">
-              <label for="telephone" class="label">Телефон</label>
-              <input type="text" name="telephone" id="telephone" />
+              <label for="telephone" class="form-field-label">Телефон</label>
+              <input
+                type="text"
+                class="form-field-input"
+                name="telephone"
+                id="telephone"
+              />
+              <svg class="form-field-icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
             </div>
 
             <div class="form-field">
-              <label for="email" class="label">Пошта</label>
-              <input type="text" name="email" id="email" />
+              <label for="email" class="form-field-label">Пошта</label>
+              <input
+                type="text"
+                class="form-field-input"
+                name="email"
+                id="email"
+              />
+              <svg class="form-field-icon">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
             </div>
 
             <div class="form-field">
-              <label for="comment" class="label">Коментар</label>
+              <label for="comment" class="form-field-label">Коментар</label>
               <textarea
+                class="textarea-text"
                 name="comment"
-                rows="5"
+                rows=" "
                 placeholder="Введіть текст"
                 id="comment"
               ></textarea>
             </div>
 
             <label class="label">
-              <input type="checkbox" name="contract" />
+              <input class="checkbox" type="checkbox" name="contract" />
+              <svg class="checkbox-icon">
+                <use href="./images/symbol-defs.svg#icon-vector"></use>
+              </svg>
               Погоджуюся з розсилкою та приймаю
-              <span class="color-terms">Умови договору</span>
+              <span class="color-terms"> Умови договору</span>
             </label>
 
             <button class="modal-button-send" type="submit">Відправити</button>
