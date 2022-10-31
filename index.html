@@ -513,6 +513,28 @@
               </li>
             </ul>
           </div>
+
+          <!-- Підпишіться на розсилку -->
+
+          <div class="subscribe">
+            <h3 class="title-social-footer">Підпишіться на розсилку</h3>
+            <form class="subscribe-form">
+              <label>
+                <input
+                  type="email"
+                  class="subscribe-input"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="button-subscribe" type="submit">
+                Підписатися
+                <svg class="button-subscribe-icon">
+                  <use href="./images/symbol-defs.svg#icon-plane"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -573,19 +595,19 @@
               <textarea
                 class="textarea-text"
                 name="comment"
-                rows=" "
+                rows=""
                 placeholder="Введіть текст"
                 id="comment"
               ></textarea>
             </div>
 
-            <label class="label">
+            <label class="label-checkbox">
               <input class="checkbox" type="checkbox" name="contract" />
               <svg class="checkbox-icon">
-                <use href="./images/symbol-defs.svg#icon-vector"></use>
+                <use href="./images/symbol-defs.svg#icon-check-mark"></use>
               </svg>
               Погоджуюся з розсилкою та приймаю
-              <span class="color-terms"> Умови договору</span>
+              <a class="link-contract" href="">Умови договору</a>
             </label>
 
             <button class="modal-button-send" type="submit">Відправити</button>
